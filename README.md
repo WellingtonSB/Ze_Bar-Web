@@ -5,21 +5,6 @@
 	🚧  Landing Page 🚀 Em construção...  🚧
 </h4>
 
-### 🛠 Tecnologias
 
-As seguintes ferramentas foram usadas na construção do projeto:
-
-- [Bootstrap 4]
-- [HTML5]
-- [CSS3]
-- [Js.]
-
-### Features
-
-- [x] Barra de menu responsiva.
-- [x] Carrossel de Imagens.
-- [x] Cadastro e validação de email e nome do usuário.
-- [x] Footer. 
-- [x] Cards. ****
 
 
