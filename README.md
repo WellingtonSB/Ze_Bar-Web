@@ -1,6 +1,4 @@
-# Ze_Bar-Web
-
-<h1 align="center">Landing Page</h1>
+<h1 align="center">Ze_Bar-Web</h1>
 <p align="center">Criação do projeto langing page utilizando apenas Bootstrap da Generation Brasil. (Utilizei a marca Greenpeople como refrência mas esse é apenas um projeto pessoal e que não será usado para outros fins além dos estudos.)</p>
 
 <h4 align="center"> 
