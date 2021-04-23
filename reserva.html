@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=,initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Reservas</title>
+
+    <style>
+        html{
+           scroll-behavior: smooth;
+       }
+       body {    
+            background: rgb(0, 0, 0);
+            background-image: url("assets/img/Imagem.jpg");
+        }
+   </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="navbar navbar-expand-lg d-flex justify-content-between ">
+  
+    <a class="navbar-brand text-light" href="#"><img src="assets/img/fundo.png" width="30" height="30" class="d-inline-block align-top" alt=""> Bar do Zé</a>
+ 
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+   
+     <div class="d-flex flex-row-reverse bd-highlight">
+     <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+       <ul class="navbar-nav m-auto justify-content-end ">
+         <li class="nav-item ">
+           <a class="nav-link  active text-light " href="./index.html">HOME <span class="sr-only">(página atual)</span></a>
+         </li>
+         <li class="nav-item ">
+             <a class="nav-link  active text-light" href="#contato">CARDÁPIO <span class="sr-only">(CARDÁPIO)</span></a>
+         </li>
+         <li class="nav-item ">
+             <a class="nav-link  active text-light" href="./localizacao.html">LOCALIZAÇÃO <span class="sr-only">(LOCALIZAÇÃO)</span></a>
+         </li>
+         <li class="nav-item ">
+             <a class="nav-link  active text-light" href="#delivery">DELIVERY <span class="sr-only">(DELIVERY)</span></a>
+         </li>
+         <li class="nav-item ">
+             <a class="nav-link active text-light" href="./reserva.html">RESERVAS <span class="sr-only">(RESERVAS)</span></a>
+         </li>
+         <li class="nav-item ">
+             <a class="nav-link active text-light" href="#contato">CONTATO<span class="sr-only">(CONTATO)</span></a>
+         </li>
+         <li class="nav-item ">
+             <button type="button" class="btn btn-dark">EN</button><span class="sr-only">(Sobre)</span>
+         </li>
+       </ul>
+     </div>
+ </div>
+   </nav>
+ <!-- NAV -->
+
+ <!-- FORMULARIO -->
+  <div class="jumbotron jumbotron-fluid mt-5 bg-white">
+    <div class="container">
+      
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="formGroupExampleInput">Nome</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nome Completo">
+                  </div>
+              <div class="form-group col-md-6">
+                <label for="inputEmail4 text-light">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+              </div>
+            </div>
+            
+
+            <div class="form-row">
+              <div class="form-group col-md-4">
+                <label for="inputEstado text-light">Horario</label>
+                <select id="inputEstado" class="form-control" id= "horario" onchange="validahorario()">
+                  <option selected value="">Horario</option>
+                  <option value="1">17:00</option>
+                  <option value="2">18:00</option>
+                  <option value="3">19:00</option>
+                  <option value="4">20:00</option>
+                  <option value="5">21:00</option>
+                  <option value="6">22:00</option>
+                </select>
+              </div>
+              
+              <div class="form-group col-md-4">
+                <label for="inputEstado text-light">Restaurante</label>
+                <select id="inputEstado" class="form-control">
+                  <option selected>Restaurante</option>
+                  <option>JK IGUATEMI-R Delfina, 163 - São Paulo</option>
+                  <option>VILA MADALENA-R Delfina, 163 - São Paulo</option>
+                  <option>OSCAR FREIRE-R Delfina, 163 - São Paulo</option>
+                </select>
+              </div>
+              <div class="form-group col-md-2">
+                <label for="inputCEP">Pessoas</label>
+                <select id="inputEstado" class="form-control">
+                    <option  selected>Quantidade</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                  </select>
+              </div>
+            </div>
+            <div class="form-group" >
+              <div class="form-check ">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Confirmar reserva
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+    </div>
+  </div>
+ <!-- FORMULARIO -->
+
+
+
+<!-- SCRIPT -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<!-- SCRIPT -->
+
+</body>
+</html>
