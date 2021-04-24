@@ -3,7 +3,7 @@
 
 <h4 align="center"> 
 	🚧  Landing Page 🚀 Em construção...  🚧
-	
+	<br>
 <p>Link: Primeira versão- https://wellingtonsb.github.io/Ze_Bar-Web/</p>
 </h4>
 
